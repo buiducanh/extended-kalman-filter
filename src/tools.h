@@ -29,6 +29,10 @@ public:
   */
   MatrixXd CalculateJacobian(const VectorXd& x_state);
 
+  /**
+  * A helper method to convert Kalman Filter state to radar measurements.
+  */
+  VectorXd StateToRadar(const VectorXd& x_state);
 };
 
 #endif /* TOOLS_H_ */
